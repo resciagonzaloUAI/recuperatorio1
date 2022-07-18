@@ -4,8 +4,9 @@ const email = document.getElementById("correo");
 const email2 = document.getElementById("correo2");
 const passwd = document.getElementById("pass");
 const passwd2 = document.getElementById("pass2");
-let resultado = false;
-
+let errorMail2 = document.getElementById("errorMail2");
+let errorPass = document.getElementById("errorPass");
+let errorPass2 = document.getElementById("errorPass2");
 
 form.addEventListener("submit", (e) => {
     e.preventDefault();
@@ -15,23 +16,31 @@ form.addEventListener("submit", (e) => {
             if (atpos < 1 || ( dotpos - atpos < 2 )) {
                 alert("El email no es correcto");
                 alert(emailID);
-                document.forms["myForm"]["fmail"].focus();
+                document.forms["form"]["fmail"].focus();
                 return false; }
             else {
                    let emailid2 = email2.value;
                    if (emailid2 != emailID)
                    {
-                    alert("Los correos son diferentes")
-                   }
+                    email2.style.borderColor= 'red';
+                    errorMail2.style.display='block';
+                    errorMail2.innerHTML='Los correos no coinciden';
+                        }
+                    
+                   
                    else {
                         pass = passwd.value;
                         pass2 = passwd2.value;
                         if (pass2 == pass) {
-                            alert("Todo ok!")
+                            
                             modal.style.display = "block";
                         }
                         else {
-                            alert("Las contraseñas no coinciden")
+
+                            passwd2.style.borderColor= 'red';
+                            passwd.style.borderColor= 'red';
+                            errorPass.style.display='block';
+                            errorPass.innerHTML='Las contraseñas no coinciden';
                         }
 
                     

@@ -13,8 +13,8 @@ body {
 }
 
 main {
-    width: 80%;
-    margin-left:10%;
+    width: 100%;
+    
     margin-top:20%;
 }
 
@@ -25,9 +25,32 @@ main {
 }
 
 .fieldset {
-    text-align: center;
+    position: relative;
+    display: inherit;
+    flex-direction: column;
+    align-content: center;
+    align-self: center;
+    justify-content:center;
+    z-index: 50;
+    width: 90%;
+    max-width: 400px;
+    padding: 15px, 0px;
+    margin: 10px;
+    margin-left: 0px;
 }
 
+red{
+    display:none;
+    color: red;
+ }
+ 
+/*
+.fieldset.falla p{
+    display: block;
+    position: absolute;
+    top: 88px;
+    color: red;
+}*/
 
 .btn-primary {
     margin-top:5%;
@@ -47,6 +70,7 @@ main {
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    
  
 }
   

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style/reset.css">
+  <link rel="stylesheet" href="./style/styles.css">  
+  <script src="./js/validador.js"></script>
+  <title>RECUPERATORIO PARCIAL 1 LPPA</title>
+</head>
+<body>
+    <main>
+        <form id="formulario" class="formulario">
+            <label for="nombre">Nombre</label>
+            <input id="nombre" class="form" type="text" required name="fname">
+            <label for="apellido">Apellido</label>
+            <input id="apellido" class="form" type="text" required name="fapellido">
+            <label for="email">Email</label>
+            <input id="correo" class="form" type="email" required name="fmail">
+            <label for="email2">Repita Email</label>
+            <input id="correo2" class="form" type="email" required name="fmail2">
+            <label for="passwd">Contraseña</label>
+            <input id="pass" class="form" type="password" required name="fpass">
+            <label for="passwd2">Repetir Contraseña:</label>
+            <input id="pass2" class="form" type="password" required name="fpass2">
+            <input id="submit"  class="enviar-form btn btn-primary" type="submit" value="Suscribirse">
+             <!-- MODAL -->
+       <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <p>Gracias por suscribirse!</p>
+            </div>
+        </div>
+      </div>
+        </form>
+    </main>
+<footer>
+
+</footer>
+</body>
+</html>

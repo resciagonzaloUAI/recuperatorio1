@@ -23,7 +23,9 @@ form.addEventListener("submit", (e) => {
                    if (emailid2 != emailID)
                    {
                     email2.style.borderColor= 'red';
+                    email.style.borderColor= 'red';
                     errorMail2.style.display='block';
+                    errorMail.innerHTML='Los correos no coinciden';
                     errorMail2.innerHTML='Los correos no coinciden';
                     }
                     else {

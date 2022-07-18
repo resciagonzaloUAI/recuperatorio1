@@ -15,12 +15,19 @@ aspecto y funcionalidad de la página web. El código desarrollado debe ser prol
 no debe contener comentarios sin sentido ni tampoco console.log.
 La página debe contener un formulario de registro de usuario, comúnmente llamado “sign up”. Dicho formulario 
 debe contener los siguientes inputs con sus respectivas validaciones (se pueden usar validaciones HTML5):
+<br />
 ● Nombre (Requerido, solo letras, mayor a 2 caracteres)
+<br />
 ● Apellido (Requerido, solo letras, mayor a 2 caracteres)
+<br />
 ● Email (Requerido, formato email válido)
+<br />
 ● Repetir Email (Requerido, formato email válido, coincidir con valor de “Email”)
+<br />
 ● Contraseña (Requerido, mayor a 6 caracteres).
+<br />
 ● Repetir contraseña (Requerido, mayor a 6 caracteres, coincidir con valor de “Contraseña”)
+<br />
 
 Al final del formulario debe haber un botón con el texto “Registrar usuario”, al hacer click 
 sobre él se deben mostrar los mensaje de error de las validaciones de cada input en caso de que 

@@ -15,7 +15,7 @@ aspecto y funcionalidad de la página web. El código desarrollado debe ser prol
 no debe contener comentarios sin sentido ni tampoco console.log.
 La página debe contener un formulario de registro de usuario, comúnmente llamado “sign up”. Dicho formulario 
 debe contener los siguientes inputs con sus respectivas validaciones (se pueden usar validaciones HTML5):
-<br />
+<br /><br />
 ● Nombre (Requerido, solo letras, mayor a 2 caracteres)
 <br />
 ● Apellido (Requerido, solo letras, mayor a 2 caracteres)
@@ -33,4 +33,6 @@ Al final del formulario debe haber un botón con el texto “Registrar usuario�
 sobre él se deben mostrar los mensaje de error de las validaciones de cada input en caso de que 
 no se hayan ingresado los datos correctos. Si los datos se ingresaron correctamente, se debe mostrar 
 un modal indicando que el registro se realizó correctamente. Luego se debe limpiar el formulario, dejando los inputs vacíos.
+<br /><br />
+Github Pages: https://resciagonzalouai.github.io/recuperatorio1/
 
